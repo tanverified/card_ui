@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap");
+      :root {
+        --green: #5ec269;
+        --yellow: #e2b53e;
+        --violet: #845eed;
+        --blue: #6f6bee;
+      }
+
+      body {
+        padding: 0;
+        margin: 0;
+        font-family: Inter;
+        background: linear-gradient(180deg, #1686dc 0%, #36a1f4 50%);
+      }
+      #main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      p,span{
+        line-height: 27px;
+      }
+
+      .card {
+        height: 700px;
+        width: 400px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        padding: 1rem 2.8rem;
+        position: relative;
+      }
+      .popular {
+        position: absolute;
+        top: -20px;
+        left: 2rem;
+        background-color: var(--green);
+        color: #fff;
+        padding: 0.2rem 1.1rem;
+        border-radius: 5px;
+        font-size: 16px;
+        width: fit-content;
+      }
+
+      .offer {
+        position: absolute;
+        top: -20px;
+        left: 10rem;
+        background-color: var(--yellow);
+        color: #fff;
+        padding: 0.2rem 1.1rem;
+        border-radius: 5px;
+        font-size: 14px;
+        width: fit-content;
+      }
+
+      .title {
+        color: var(--violet);
+        font-size: 26px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        margin-top: 1.5rem;
+      }
+      .price {
+        font-weight: 900;
+        font-size: 50px;
+        margin-top: 10px;
+      }
+
+      .subtitle {
+        color: rgb(81, 78, 78);
+        font-size: 15px;
+      }
+
+      svg {
+        width: 16px;
+        height: 16px;
+        margin-top: 2px;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      li {
+        display: grid;
+        grid-template-columns: 1fr 15fr;
+        margin: 0 0 12px 0;
+      }
+      span {
+        font-size: 16px;
+        color: #100f0f;
+        font-weight: 500;
+      }
+
+      .card-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 6rem
+      }
+      button {
+        display: inline-block;
+        outline: 0;
+        border: 0;
+        cursor: pointer;
+        background: #000000;
+        color: #ffffff;
+        border-radius: 13px;
+        padding: 20px 24px;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1;
+        transition: transform 200ms, background 200ms;
+        width: calc(400px - 1rem);
+      }
+      button:hover {
+        transform: scale(1.01);
+        color: #000;
+        background: #fff;
+        border: 2px solid #000;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div class="card">
+        <div class="special">
+          <span class="popular">Most popular</span>
+          <span class="offer">25% off</span>
+        </div>
+        <div class="card-header">
+          <h1 class="title">Premium Plan</h1>
+          <h1 class="price">$999<span>/mo</span></h1>
+        </div>
+        <div class="card-body">
+          <p class="subtitle">
+            Premium content comes with top quality content that helps you level
+            up your front-end development skills
+          </p>
+          <ul>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4.5 12.75l6 6 9-13.5"
+                />
+              </svg>
+              <span>Premium videos for front-end development</span>
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4.5 12.75l6 6 9-13.5"
+                />
+              </svg>
+              <span
+                >Cloud-based Integrated Development Environment (IDE) supporting
+                multiple programming languages.</span
+              >
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4.5 12.75l6 6 9-13.5"
+                />
+              </svg>
+              <span
+                >Browser-based terminal with support for running and compiling
+                code on the fly.</span
+              >
+            </li>
+            <li>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-3 h-3"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4.5 12.75l6 6 9-13.5"
+                />
+              </svg>
+              <span
+                >Comprehensive resource library with coding tutorials,
+                exercises, and interactive projects.</span
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <button>Sign up today</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
